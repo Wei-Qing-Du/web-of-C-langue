@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>
+結構
+</title>
+</head>
+<body background="images.jpg">
+<font size="30" color="#FF0000"> <p align ="center">結構 </font></p>
+
+<table>
+
+<tr>
+<td>
+<img src ="struct_flow1.png" width="300" height="200"><br>
+</td>
+
+<td>
+<font size="4" color="#blue">
+struct stu
+	{<br>
+		int sid;<font size="4" color="#008800">//學生編號</font><br>
+		char cl;<font size="4" color="#008800">//學生班級</font><br>
+		int grade;<font size="4" color="#008800">//學生分數</font><br>
+	};<br>
+
+void main()
+{	
+	stu a;<font size="4" color="#008800">//宣告名稱為a的結構</font><br>
+	a.sid=40001;<font size="4" color="#008800">//學生編號為:40001</font><br>
+	a.cl='A';<font size="4" color="#008800">//學生班級:A</font><br>
+	a.grade=100;<font size="4" color="#008800">//學生分數為100</font><br>
+
+	printf("學生編號:%d\n",a.sid);<br>
+	printf("學生編號:%c\n",a.cl);<br>
+	printf("學生編號:%d\n",a.grade);<br>
+
+
+}</font>
+</td>
+
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="struct1.png" width="300" height="200"><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src ="struct_flow2.png" width="300" height="400"><br>
+</td>
+
+<td>
+<font size="4" color="#blue">
+struct stu
+	{<br>
+		int sid;<font size="4" color="#008800">//學生編號</font><br>
+		char cl;<font size="4" color="#008800">//學生班級</font><br>
+		int grade;<font size="4" color="#008800">//學生分數</font><br>
+	};<br>
+
+void main()<br>
+{<br>	
+	stu a[2];<font size="4" color="#008800">//宣告結構陣列</font><br>
+	
+	a[0].sid=4001;<font size="4" color="#008800">//學生編號為:40001</font><br>	
+	a[0].cl='B';<font size="4" color="#008800">//學生班級為:B</font><br>
+	a[0].grade=98;<font size="4" color="#008800">//學生分數為:98</font><br>
+
+	a[1].sid=4012;<font size="4" color="#008800">//學生編號為:4012</font><br>
+	a[1].cl='A';;<font size="4" color="#008800">//學生班級為:A</font><br>
+	a[1].grade=100;<font size="4" color="#008800">//學生分數為:100</font><br>
+
+	printf("學生編號:%d\n",a[0].sid);<br>
+	printf("學生編號:%c\n",a[0].cl);<br>
+	printf("學生編號:%d\n",a[0].grade);<br>
+	printf("==================================\n");<br>
+	printf("學生編號:%d\n",a[1].sid);<br>
+	printf("學生編號:%c\n",a[1].cl);<br>
+	printf("學生編號:%d\n",a[1].grade);<br>
+
+
+	system("pause");<br>
+
+}</font>
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="struct2.png" width="300" height="200"><br>
+
+</td>
+
+</tr>
+</table>
+<audio src="http://www.uploadmusic.org/MUSIC/2149501419341744.mp3" autoplay loop > 
+</body>
+</html>

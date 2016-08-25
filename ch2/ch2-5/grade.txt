@@ -1,0 +1,21 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	int stu;
+	printf("請輸入成績");
+	scanf("%d",&stu);
+
+	if(stu>=60)
+	{
+		printf("為true\n");
+	}
+
+	else
+	{
+		printf("為false\n");
+	}
+	system("pause");
+}

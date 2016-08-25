@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>
+指標
+</title>
+</head>
+<body background="images.jpg">
+<font size="30" color="#FF0000"> <p align ="center">指標 </font></p>
+
+<table>
+<tr>
+
+<td>
+<img src ="ptr.png" width="400" height="300"><br>
+</td>
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+
+{<br>
+	int * ptr;<font size="4" color="#008800">//宣告ptr的指標變數</font><br>
+	int i;<font size="4" color="#008800">//變數i</font><br>
+
+	printf("請輸入\n");<br>
+	scanf("%d",&i);<br>
+
+    ptr=&i;<font size="4" color="#008800">//把i的位置給ptr</font><br>
+
+	printf("i的位置%p\n",&i);<font size="4" color="#008800">//印出i的位置</font><br>
+	printf("i的內容%d\n",i);<font size="4" color="#008800">//印出i的內容</font><br>
+	printf("ptr的內容%p\n",ptr);<font size="4" color="#008800">//印出儲存在ptr的位置</font><br>
+	printf("ptr的指向i的結果%d\n",*ptr);<font size="4" color="#008800">//印出ptr指向i後的結果</font><br>
+	printf("==========================================\n");<br>
+	*ptr=*ptr+1;<font size="4" color="#008800">//先ptr指向i加一後，再把結果指定給ptr指向i</font><br>
+	printf("*ptr=*ptr+1後\n");<br>
+    printf("目前i的內容%d\n",i);<font size="4" color="#008800">//印出i的內容</font><br>
+}</font>
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="pointer.png" width="200" height="300"><br>
+</td>
+
+
+</tr>
+</table>
+<audio src="http://www.uploadmusic.org/MUSIC/8018761419341479.mp3" autoplay loop > 
+</body>
+</html>

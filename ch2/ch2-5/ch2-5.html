@@ -1,0 +1,84 @@
+<!doctype html>
+<head>
+<title>
+流程控制
+</title>
+</head>
+<body background="images.jpg">
+<font size="30" color="#FF0000"> <p align ="center">流程控制 </font></p>
+
+<font size="4" color="#FF0000"> <p align ="center">if else應用 </font><br>
+<table align="left"  cellpadding="5">
+<tr>
+<td>
+<img src ="grade.png" width="500" height="380"><br>
+<font size="4" color="#blue"> 上圖為右邊程式，執行的流程，讓學習們，<br>熟悉流程與IF ELSE的使用。</font>
+</td>
+
+<td>
+<font size="4" color="#blue"> void main()<br></font>
+<font size="4" color="#blue"> {<br></font>
+<font size="4" color="#blue"> printf("請輸入成績");<br></font>
+<font size="4" color="#blue"> scanf("%d",&stu);<font size="4" color="#008800"> scanf("%d",&stu);//輸入成績</font><br></font>
+<font size="4" color="#blue"> if(stu>=60) printf("為true\n");<font size="4" color="#008800">//如果成績大於六十分，印出true</font><br></font>
+<font size="4" color="#blue"> else printf("為false\n");<font size="4" color="#008800">//如果成績小於六十分，印出false</font><br></font>
+<font size="4" color="#blue"> }<br></font>
+<font size="4" color="#blue"> P.S.有沒有覺得，為什麼在IF ELSE裡不用括號，<BR>因為當只有一個陳述式，可省略。<br></font>
+</td>
+
+<td>
+<font size="6" color="#FF0000" > <p align ="left">輸出結果: </font></p>
+<img src ="true.png" width="200" height="200"> <img src ="false.png" width="200" height="200">
+</td>
+</tr>
+</table>
+
+<font size="4" color="#FF0000"> <p align ="center">switch應用 </font>
+<table align="left" cellpadding="5">
+<tr>
+
+<td>
+<img src ="Flowchart.png" width="300" height="500"><br>
+<font size="4" color="#blue"> 上圖為右邊程式，執行的流程，讓學習們，<br>熟悉流程與SWITCH的使用。</font>
+</td>
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+{<br>
+	printf("季節選擇\n");<br>
+	int season;<font size="4" color="#008800">//宣告season的變數</font><br>
+
+	printf("請輸入季節月份\n");<br>
+	scanf("%d",&season);<font size="4" color="#008800 ">//輸入季節月份</font><br>
+    switch(season)<font size="4" color="#008800 ">//引入變數</font><br>
+	{<br>
+	 case  7:<font size="4" color="#008800 ">//season為7，印出夏天</font><br>
+		printf("夏天\n");<br>
+		break;<br>
+     case  3:<font size="4" color="#008800 ">//season為3，印出春天</font><br>
+		printf("春天\n");<br>
+		break;<br>
+	 case  10:<font size="4" color="#008800 ">//season為10，印出秋天</font><br>
+		printf("秋天\n");<br>
+		break;<br>
+     case  12:<font size="4" color="#008800 ">//season為12，印出冬天</font><br>
+		printf("冬天\n");<br>
+		break;<br>
+    default:<font size="4" color="#008800 ">//season為其他數字，印出請重新輸入</font><br>
+	   printf("請輸入正確季節月份\n");<br>
+	}</font>	
+</td>
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="summer.png" width="200" height="200"><br>
+<img src ="spring.png" width="200" height="200"><br>
+<img src ="wrong.png" width="200" height="200">
+</td>
+
+</tr>
+</table>
+
+<audio src="http://www.uploadmusic.org/MUSIC/4080171419900163.mp3" autoplay loop > 
+</body>
+</html>

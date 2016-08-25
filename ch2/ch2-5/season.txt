@@ -1,0 +1,31 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	printf("季節選擇\n");
+	int season;
+
+	printf("請輸入季節月份\n");
+	scanf("%d",&season);
+    switch(season)
+	{
+	case  7:
+		printf("夏天\n");
+		break;
+    case  3:
+		printf("春天\n");
+		break;
+	 case  10:
+		printf("秋天\n");
+		break;
+   case  12:
+		printf("冬天\n");
+		break;
+   default:
+	   printf("請輸入正確季節月份\n");
+
+	}
+	system("pause");
+}

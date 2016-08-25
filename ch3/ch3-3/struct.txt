@@ -1,0 +1,25 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+struct stu
+	{
+		int sid;//學生編號
+		char cl;//學生班級
+		int grade;//學生分數
+	};
+
+void main()
+{	
+	stu a;//a同學
+	a.sid=40001;
+	a.cl='A';
+	a.grade=100;
+
+	printf("學生編號:%d\n",a.sid);
+	printf("學生編號:%c\n",a.cl);
+	printf("學生編號:%d\n",a.grade);
+
+	system("pause");
+
+}

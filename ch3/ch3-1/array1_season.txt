@@ -1,0 +1,32 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	printf("季節選擇,陣列應用\n");
+	int season[5]={7,3,10,12,44},i;
+
+	for(i=0;i<=4;i++)
+	{
+     switch(season[i])
+	 {
+	  case  7:
+		printf("夏天。\n");
+		break;
+      case  3:
+		printf("春天。\n");
+		break;
+	  case  10:
+		printf("秋天。\n");
+		break;
+      case  12:
+		printf("冬天。\n");
+		break;
+     default:
+	   printf("無效月份。\n");
+	 }
+	
+	}
+	system("pause");
+}

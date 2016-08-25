@@ -1,0 +1,25 @@
+printf()ㄧ计
+
+俱计:
+d 秈
+o 秈
+x せ秈
+u ぃ盿才腹秈
+l 俱计
+
+疊翴计:
+f 计
+e 计
+
+じ:
+c じ
+s ﹃
+
+\n 传︽
+\r 耴
+\t 铬
+\b 癶
+\f 铬
+
+
+

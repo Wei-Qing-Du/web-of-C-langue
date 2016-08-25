@@ -1,0 +1,28 @@
+void main()
+{
+int a,b,z;
+float c,d,e;
+
+printf("¥[½d¨Ò:\n");
+a=4;
+b=2;
+z=a+b;
+printf("a=4 b=2 a+b=%d\n",z);
+
+printf("´î½d¨Ò:\n");
+a=5;
+b=1;
+z=a-b;
+printf("a=5 b=1 a-b=%d\n",z);
+
+printf("­¼½d¨Ò:\n");
+a=4;
+b=4;
+z=a*b;
+printf("a=4 b=4 a*b=%d\n",z);
+
+printf("°£½d¨Ò:\n");
+c=4;
+d=2;
+e=c/d;
+printf("c=4 d=2 c/d=%f\n",e);

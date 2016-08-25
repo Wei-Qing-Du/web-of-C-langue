@@ -1,0 +1,36 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+struct stu
+	{
+		int sid;
+		char cl;
+		int grade;
+	};
+
+void main()
+{	
+	stu a[2];
+	
+	a[0].sid=4001;
+	a[0].cl='B';
+	a[0].grade=98;
+
+	a[1].sid=4012;
+	a[1].cl='A';
+	a[1].grade=100;
+
+	printf("學生編號:%d\n",a[0].sid);
+	printf("學生編號:%c\n",a[0].cl);
+	printf("學生編號:%d\n",a[0].grade);
+	printf("==================================\n");
+	printf("學生編號:%d\n",a[1].sid);
+	printf("學生編號:%c\n",a[1].cl);
+	printf("學生編號:%d\n",a[1].grade);
+
+
+	system("pause");
+
+
+}

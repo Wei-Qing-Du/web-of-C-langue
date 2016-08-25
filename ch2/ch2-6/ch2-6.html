@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>
+迴圈
+</title>
+<body background="images.jpg">
+<p align="center"><font face="Arial" color="red" size="30"> 迴圈</font></p>
+
+<table align="left"  cellpadding="5">
+<tr>
+<td>
+<img src ="wile_season_Flowchart.png" width="300" height="400"><br>
+<font size="4" color="#blue"> 上圖為右邊程式的應用，<br>熟悉while迴圈的使用。</font>
+</td>
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+{<br>
+    while(i>=0)<font size="4" color="#008800">//若i大於零進入迴圈，當i小於零時跳出迴圈</font><br>
+ {<br>
+	printf("季節選擇\n");<br>
+	int season;<font size="4" color="#008800">//宣告season的變數</font><br>
+
+	printf("請輸入季節月份\n");<br>
+	scanf("%d",&season);<font size="4" color="#008800 ">//輸入季節月份</font><br>
+    switch(season)<font size="4" color="#008800 ">//引入變數</font><br>
+	&nbsp;&nbsp;{<br>
+	 case  7:<font size="4" color="#008800 ">//season為7，印出夏天</font><br>
+		printf("夏天\n");<br>
+		break;<br>
+     case  3:<font size="4" color="#008800 ">//season為3，印出春天</font><br>
+		printf("春天\n");<br>
+		break;<br>
+	 case  10:<font size="4" color="#008800 ">//season為10，印出秋天</font><br>
+		printf("秋天\n");<br>
+		break;<br>
+     case  12:<font size="4" color="#008800 ">//season為12，印出冬天</font><br>
+		printf("冬天\n");<br>
+		break;<br>
+    default:<font size="4" color="#008800 ">//season為其他數字，印出請重新輸入</font><br>
+	   printf("請輸入正確季節月份\n");<br>
+	&nbsp;&nbsp;}<br>
+ }<br>
+ i--;<font size="4" color="#008800">//控制迴圈的變數，每選擇一個季節，i就減一</font><br>
+}</font>	
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="while_season.png" width="200" height="600"><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src ="for_season_Flowchart.png" width="350" height="400"><br>
+<font size="4" color="#blue"> 上圖為右邊程式的應用，<br>熟悉for迴圈的使用。</font>
+</td>
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+{<br>
+    for(i=0;i<=4;i++)<font size="4" color="#008800">//一開始i等於零進入迴圈，每執行一次，i加一，直到大於四時<br>，跳出迴圈。<br></font>
+ {<br>
+	printf("季節選擇\n");<br>
+	int season;<font size="4" color="#008800">//宣告season的變數</font><br>
+
+	printf("請輸入季節月份\n");<br>
+	scanf("%d",&season);<font size="4" color="#008800 ">//輸入季節月份</font><br>
+    switch(season)<font size="4" color="#008800 ">//引入變數</font><br>
+	&nbsp;&nbsp;{<br>
+	 case  7:<font size="4" color="#008800 ">//season為7，印出夏天</font><br>
+		printf("夏天\n");<br>
+		break;<br>
+     case  3:<font size="4" color="#008800 ">//season為3，印出春天</font><br>
+		printf("春天\n");<br>
+		break;<br>
+	 case  10:<font size="4" color="#008800 ">//season為10，印出秋天</font><br>
+		printf("秋天\n");<br>
+		break;<br>
+     case  12:<font size="4" color="#008800 ">//season為12，印出冬天</font><br>
+		printf("冬天\n");<br>
+		break;<br>
+    default:<font size="4" color="#008800 ">//season為其他數字，印出請重新輸入</font><br>
+	   printf("請輸入正確季節月份\n");<br>
+	&nbsp;&nbsp;}<br>
+ }<br>
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="for_season.png" width="200" height="600"><br>
+</td>
+</tr>
+
+</table>
+<audio src="http://www.uploadmusic.org/MUSIC/1155531419340279.mp3" autoplay loop > 
+</body >
+</html>

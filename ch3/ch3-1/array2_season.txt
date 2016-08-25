@@ -1,0 +1,20 @@
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+	printf("季節選擇,二維陣列應用\n");
+	char season[2][5]={{'1','2','3','4','5'},{'A','B','C','D','E'}},i;
+
+	for(i=0;i<=4;i++)
+	{			
+	  if(season[0][i]=='1'&&season[1][i]=='A') printf("七月份為夏天\n");
+	  else if(season[0][i]=='2'&&season[1][i]=='B') printf("三月份為春天\n");
+	  else if(season[0][i]=='3'&&season[1][i]=='C') printf("十月份為秋天\n");
+	  else if(season[0][i]=='4'&&season[1][i]=='D') printf("十二月份為冬天\n");
+	  else if(season[0][i]=='5'&&season[1][i]=='E') printf("無效月份\n");
+	}
+	
+	system("pause");
+}

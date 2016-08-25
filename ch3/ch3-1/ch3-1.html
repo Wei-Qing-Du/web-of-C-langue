@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<title>
+陣列
+</title>
+<body background="images.jpg">
+
+<font size="30" color="#FF0000"> <p align ="center">陣列 </font></p>
+
+<font size="5" color="#FF0000"> <p align ="left">(1)一維陣列、(2)二維陣列 </font><br>
+
+<font size="3" color="#FF0000"> <p align ="left">(1)一維陣列 :</font><br>
+<font size="3" color="blue"> <p align ="left">資料型態　陣列名稱[大小]={初始值}；</font><br>
+<font size="3" color="blue"> <p align ="left">int season[4];</font><br>
+
+<table>
+<tr>
+<td>
+</td>
+
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+{<br>
+	printf("季節選擇,陣列應用\n");<br>
+	int season[5]={7,3,10,12,44},i;<font size="4" color="#008800">//宣告名為season的一維陣列並給他初始值</font><br>
+	for(i=0;i<=4;i++)<font size="4" color="#008800">//一開始i等於零進入迴圈，每執行一次，i加一，直到大於四時<br>，跳出迴圈。<br></font>
+    switch(season[i])<font size="4" color="#008800 ">//引入陣列內的數值</font><br>
+	{<br>
+	 case  7:<font size="4" color="#008800 ">//season為7，印出夏天</font><br>
+		printf("夏天\n");<br>
+		break;<br>
+     case  3:<font size="4" color="#008800 ">//season為3，印出春天</font><br>
+		printf("春天\n");<br>
+		break;<br>
+	 case  10:<font size="4" color="#008800 ">//season為10，印出秋天</font><br>
+		printf("秋天\n");<br>
+		break;<br>
+     case  12:<font size="4" color="#008800 ">//season為12，印出冬天</font><br>
+		printf("冬天\n");<br>
+		break;<br>
+    default:<font size="4" color="#008800 ">//season為其他數字，印出請重新輸入</font><br>
+	   printf("請輸入正確季節月份\n");<br>
+	}</font>	
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="array1_season.png" width="200" height="300"><br>
+</td>
+</tr>
+</table>
+
+<font size="3" color="#FF0000"> <p align ="left">(2)二維陣列 :</font><br>
+<font size="3" color="blue"> <p align ="left">資料型態　陣列名稱[大小][大小]={{初始值},{初始值}}；</font><br>
+<font size="3" color="blue"> <p align ="left">char season[2][5]={{'1','2','3','4','5'},{'A','B','C','D','E'}};</font><br>
+<table>
+<tr>
+<td>
+</td>
+
+<td>
+<font size="4" color="#blue">
+void main()<br>
+{<br>
+	printf("季節選擇,二維陣列應用\n");<br>
+	char season[2][5]={{'1','2','3','4','5'},{'A','B','C','D','E'}},i;<font size="4" color="#008800">//宣告名為season的二維陣列並給他初始值</font><br>
+	for(i=0;i<=4;i++)<font size="4" color="#008800">//一開始i等於零進入迴圈，每執行一次，i加一，直到大於四時<br>，跳出迴圈。<br></font>
+    {
+	  if(season[0][i]=='1'&&season[1][i]=='A') printf("七月份為夏天\n");<font size="4" color="#008800">//若為陣列為1和A時，印出七月份為夏天</font><br>
+	  else if(season[0][i]=='2'&&season[1][i]=='B') printf("三月份為春天\n");<font size="4" color="#008800">//若為陣列為2和B時，印出三月份為春天</font><br>
+	  else if(season[0][i]=='3'&&season[1][i]=='C') printf("十月份為秋天\n");<font size="4" color="#008800">//若為陣列為3和C時，印出十月份為秋天</font><br>
+	  else if(season[0][i]=='4'&&season[1][i]=='D') printf("十二月份為冬天\n");<font size="4" color="#008800">//若為陣列為4和D時，印出十二月份為冬天</font><br>
+	  else if(season[0][i]=='5'&&season[1][i]=='E') printf("無效月份\n");<font size="4" color="#008800">//若為陣列為5和E時，印出無效月份</font><br>
+	}
+	}
+}<br></font>
+
+<font size="4" color="#008800">P.S.&&代表要兩個成立才算喔，else if有否則的意思，通常用來多重選擇<font><br>
+</td>
+
+<td>
+<font size="6" color="#FF0000" align="left">輸出結果: </font><br>
+<img src ="array2_season.png" width="200" height="300"><br>
+</td>
+
+</tr>
+
+</table>
+<audio src="http://www.uploadmusic.org/MUSIC/8752121419340806.mp3" autoplay loop > 
+</body>
+</html>
